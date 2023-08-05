@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+html {
+    background: rgb(45, 110, 154);
+    font-family: Verdana, Geneva, sans-serif;
+    height: 100%;
+ }
+ 
+ body {
+    background-color: rgb(213, 241, 255);
+    box-shadow: rgb(51, 51, 51) 10px 0px 40px, rgb(51, 51, 51) -10px 0px 40px;     
+    min-height: 100%;   
+    margin: auto;
+    padding-top: 40px;
+    min-width: 10%;
+    max-width: 80%;   
+    width: 100%;
+    overflow: hidden;
+ }
+
+form {width: 100%;} 
+
+form > fieldset {
+    background-color: white;
+}
+
+form h1 {
+    text-align: center;
+    color: rgba(9, 40, 132, 0.9);
+}
+
+form img {
+    margin-left: 37%;
+}
+
+form fieldset#banking {
+    margin: auto;
+    margin-top: 10%;
+    width: 30%;
+    border-radius: 7%;
+}
+
+table tr td input#ID, input#pass {
+    margin-left: 20px;
+    border-radius: 4px;
+    height: 30px;
+}
+
+div input.payNow, input.cancel {
+    border-radius: 5px;
+    height: 40px;
+    width: 13%;
+    font-size: 20px;
+}
+
+table.bank {
+    margin: auto;
+}
+
+input.cancel { 
+    margin-left: 34.5%;
+    background-color: rgb(129, 123, 123);
+    color: rgb(217, 214, 214);
+    transition-duration: 0.5s; 
+}
+
+input.cancel:hover { 
+    background-color: rgb(87, 83, 83);
+    color: rgb(255, 255, 255);
+}
+
+input.payNow {  
+    margin-left: 4%;
+    background-color: rgba(11, 15, 148, 0.9);
+    color: rgb(240, 232, 232);
+    transition-duration: 0.5s;
+}
+
+input.payNow:hover {
+    background-color: rgb(6, 6, 65);
+    color: rgb(255, 255, 255);
+}
+
+form fieldset#banking {
+    box-shadow: -10px 10px 15px 5px rgb(167, 164, 164);
+}

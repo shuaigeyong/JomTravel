@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="Online_Banking.css" rel="stylesheet" />
+</head>
+
+<body>
+    <form>
+        <fieldset id="banking">
+        <br/>
+        <img src="bank.png" alt="bank"/>
+        <h1>Online Banking</h1>
+        <table class="bank">
+            <tr>
+                <td><label for="userID">User ID</label></td>
+                <td><input type="text" name="ID" id="ID" size="30" required="required"></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password</label></td>
+                <td><input type="password" name="pass" id="pass" size="30" required="required"></td>
+            </tr>
+        </table>
+        <br/>
+        </fieldset>
+        <br/><br/>
+        <div>            
+            <input class="cancel" type="reset" value="Cancel">
+            <input class="payNow" type="submit" value="Pay Now">            
+        </div>
+    </form>
+</body>
+</html>

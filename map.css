@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html{
+    background-color: #222;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width:100%;
+    height: 1000px;
+    margin: auto;
+   /* background-image: url(img/mapback1.jpg); */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#compass{
+  position: absolute;
+  width: 100px;
+  left: 400px;
+  animation-name: compass;
+  animation-duration: 4s;
+  transition: transform 2s;
+}
+#compass:hover{
+  transform: rotate(60deg);
+}
+.map_title{
+  position: relative;
+  top: 100px;
+  margin: auto;
+  text-indent: 20px;
+}
+
+.map_title h1{
+  
+  color: rgb(145, 8, 8);
+
+  text-transform: uppercase;
+  font-size: 50px;
+  position: relative;
+  animation-name: titleappear;
+  animation-duration: 1.5s;
+ 
+}
+.map_title p{
+  color: whitesmoke;
+  font-size:0.1em;
+  line-height: 10em;
+  position: relative;
+  animation: titleinfoappear 1.3s linear;
+}
+.map_malaysia{
+    
+    position: relative;
+    top: 100px;
+    left: 15px;
+    margin-bottom: 100px;
+  width: 900px;
+  height: 500px;
+  animation-name: mapappear;
+  animation-duration: 1.5s;
+}
+
+.map_malaysia path{
+  fill: #222;
+  stroke: white;
+  stroke-width: 1px;
+  transition: 0.3s ;
+}
+.map_malaysia path:hover{
+  fill:goldenrod;
+  transform: translate(-3px,-3px);
+}
+svg{
+  height: 350px;
+  
+}
+#tbl_info{
+    float: right;
+    
+    background-color:transparent;
+    border: white 1px solid;
+    color: whitesmoke;
+    width: 20%;
+    margin-right:10px ;
+    border-collapse: collapse;
+    
+   
+}
+#tbl_info td{
+    border-bottom:1px solid whitesmoke;
+    padding-left: 5px;
+    font-size: xx-small;
+}
+@keyframes mapappear{
+  from{
+    top:750px;
+    left:15px;
+  }
+  to{
+    top: 100px;
+    left: 15px;
+  }
+}
+@keyframes titleappear{
+ 
+  from { 
+    left:-100px; top:-100px;
+  }
+ to {
+  left:0px; top:0px;
+}
+}
+@keyframes titleinfoappear{
+  from{
+    top:0px;
+    left:-300px;
+  }
+  to{
+    top: 0px;
+    left: 0px;
+  }
+}
+@keyframes compass{
+  0%{
+    transform: rotate(-180deg);
+  }
+  30%{
+    transform: rotate(90deg);
+  }
+  50%{
+    transform: rotate(-55deg);
+  }
+  65%{
+    transform: rotate(40deg);
+  }
+  75%{
+    transform: rotate(-20deg);
+  }
+  80%{
+    transform: rotate(8deg);
+  }
+  90%{
+    transform: rotate(-6deg);
+  }
+  95%{
+    transform: rotate(4deg);
+  }
+  97%{
+    transform: rotate(-1deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}

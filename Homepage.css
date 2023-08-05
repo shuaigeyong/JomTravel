@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo_name{
+ position: absolute;
+ margin-top: 20px;
+ margin-left: 8px;
+ font-size: 26px;
+ font-weight: bold;
+ color: white;
+}
+
+.homevideo{
+  margin-bottom: 75px;
+}
+
+blockquote{
+  text-align: left;
+  margin: 0 10%;
+  color: rgb(0, 31, 33);
+  word-spacing: 3px;
+  margin-bottom: 80px;
+}
+
+.introduce > h1{
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: #01454a;
+}
+
+
+
+body{
+  margin: auto;
+  background-color: white;
+ 
+}
+.food{
+  margin: 0 auto;
+}
+
+.food .title{
+  text-align: center;
+  color: #01454aca;
+}
+
+.food .nasilemak{
+  max-height: 440px;
+  margin-top: 110px;
+  margin-left: 140px;
+  margin-right: 200px;
+  margin-bottom: 60px;
+  float: left;
+}
+.food .subtitle{
+  margin-top: 50px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  font-weight: 500;
+  color: #01454a;
+}
+
+.food2 img{
+  width: 350px;
+  height: 250px;
+  margin-top: 16px;
+  margin-right: 20px;
+}
+
+.food2 p{
+  margin-top: 30px;
+  font-size: 20px;
+  color: #09464b ;
+}
+.subtitle2{
+  margin: 18px 0;
+  color: #01454a;
+  font-size: 22px;
+}
+
+.foodlist li{
+  color: #156752;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 200;
+  padding-left: 2px;
+  display: list-item;
+}
+
+.foodlist li::before{
+  content:"\26AC";
+  color: rgb(45, 220, 132);
+  padding-left: 20px;
+}
+
+
+
+.aboutus img{
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-color: white;
+  overflow: hidden;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  
+  
+}
+.inner{
+  width: 55%;
+  float: right;
+  background-color: #006633;
+  padding: 140px;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  position: relative;
+  margin-top: -666px;
+}
+.inner h1{
+  margin-bottom: 30px;
+  font-size: 34px;
+  font-weight: 900;
+  color: #e2eade;
+}
+
+p.text{
+  font-size: 14px;
+  color: #bdd499;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+button.aboutus{
+  height: 43px;
+  width: 200px;
+  border: none;
+  border-radius: 30px;
+  background-color: #2fa976;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  margin: auto;
+  cursor: pointer;
+}
+
+button.aboutus:hover{
+  background-color: #1dc17d;
+}
+button.aboutus:active{
+  background-color: #0faa6a;
+}

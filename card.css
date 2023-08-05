@@ -1,0 +1,105 @@
+
+*{
+  box-sizing: border-box;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+div.cards{
+  margin-bottom: 70px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cards__item {
+  display: flex;
+  padding: 12px;
+  width: 25% ;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 25px;
+}
+.card__image {
+  background-position: center ;
+  background-size: cover;
+  position: relative;
+  
+}
+.card__image::before {
+  content: "";
+  display: block;
+}
+
+.card__image::before {
+    padding-top: 400px;
+  }
+
+.card__image-melaka {
+  background-image: url(picture/homepage/MELAKA.jpg);
+}
+.card__image-langkawi {
+  background-image: url(picture/homepage/LANGKAWI2.jpg);
+}
+.card__image-sabah {
+  background-image: url(picture/homepage/SABAH.jpg);
+}
+.card__image-selangor {
+  background-image: url(picture/homepage/KL.jpg);
+}
+.card__title {
+  color: #01454a;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.card__text {
+  flex: 1 1 auto;
+  font-size: 3px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: rgb(104, 99, 99);
+}
+
+
+div.cards button{
+  height: 43px;
+  width: 200px;
+  border: none;
+  border-radius: 30px;
+  background-color: #3fcf92;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  margin: auto;
+  cursor: pointer;
+}
+div.cards button:hover{
+  background-color: #1ac27c;
+}
+
+div.cards button:active{
+  background-color: #14945e;
+}
+
+div.cards a{
+  margin: 0 auto;
+}

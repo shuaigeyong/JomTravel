@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terengganu Package</title>
+    <link rel="icon" type="image/x-icon" href="img/newlogo.ico"><!--网页标签上的logo-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+    <link rel="stylesheet" href="Package_plan.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer2.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <label class="logo"><a href="Homepage.html"><img src="picture/homepage/logo.png"></a></label>
+      <ul class="nav_link">
+        <li><a href="Homepage.html">HOME</a></li>
+        <li><a href="map.html">MAP</a></li>
+        <li><a href="contact us.html">CONTACT</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="Signin_login.html">LOGIN</a> </li>
+      </ul>
+    </nav>
+  </header>
+
+    <div class="slideshow">
+        <!-- Full-width images with number and caption text -->
+        <div class="State animation">         
+          <img src="Terengganu_planGallery/plan_img1.jpg" height="710px" style="width:100%" />
+        </div>
+      
+        <div class="State animation">          
+          <img src="Terengganu_planGallery/plan_img2.jpg" height="710px" style="width:100%" />
+        </div>
+      
+        <div class="State animation">         
+          <img src="Terengganu_planGallery/plan_img3.jpg" height="710px" style="width:100%" />
+        </div>
+
+        <div class="State animation">         
+            <img src="Terengganu_planGallery/plan_img4.jpg" height="710px" style="width:100%" />
+        </div>       
+        
+        <div class="auto">
+            <span class="autobut" id="autobut1"></span>
+            <span class="autobut"></span>
+            <span class="autobut"></span>
+            <span class="autobut"></span>
+        </div>
+    </div>
+
+    <div class="heading" >
+      <h1 style="position: relative; left: -200px;">TERENGGANU</h1>
+      <!-- 标题图片里的注释 ，       图片要在plan.css里放-->
+      
+    </div>
+
+    <div><h1 class="title">PACKAGE</h1></div>
+    <div class="container">
+        <div class="slide">   <!--这里是配套1的图片-->
+            <div class="image" style="background-image: url(Terengganu_planGallery/plan_img5.jpg);">
+                <div class="content">
+                    <a href="Terengganu_package1.html"><button class="button"><span>Detail</span></button></a>
+                    <h1 data-title="PACKAGE 1">PACKAGE 1</h1>
+                </div>
+            </div>    
+        </div>
+        <div class="slide">   <!--这里是配套2的图片-->
+            <div class="image" style="background-image: url(Terengganu_planGallery/plan_img6.jpg);"> 
+                <div class="content">
+                    <a href="Terengganu_package2.html"><button class="button"><span>Detail</span></button></a>
+                    <h1 data-title="PACKAGE 2">PACKAGE 2</h1>
+                </div>
+            </div>  
+        </div>
+        <div class="slide">   <!--这里是配套3的图片-->
+            <div class="image" style="background-image: url(Terengganu_planGallery/plan_img7.jpg);">
+                <div class="content">
+                    <a href=""><button class="button"><span>Detail</span></button></a>
+                    <h1 data-title="COMING SOON">COMING SOON</h1>
+                </div> 
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- footer -->
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h4>COMPANY</h4>
+            <ul>
+              <li><a href="aboutus.html">About us</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>QUICKLINKS</h4>
+            <ul>
+              <li><a href="Homepage.html">Home</a></li>
+              <li><a href="map.html">Map</a></li>
+              <li><a href="faq.html">Frequently Ask Question</a></li>
+              <li><a href="contact us.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>GET HELP</h4>
+            <ul>
+              <li><a href="contact us.html">Contact Us</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>FOLLOW US</h4>
+            <div class="social_link">
+              <ul>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+      <script>
+        var auto = 1;
+        autoSlide();
+
+        function autoSlide() {
+          var x;
+          var autoState = document.getElementsByClassName("State");
+          var autobut = document.getElementsByClassName("autobut");
+
+          for (x = 0; x < autoState.length; x++) {
+            autoState[x].style.display = "none";  
+          } 
+          if (auto > autoState.length) {auto = 1} 
+
+          for (x = 0; x < autobut.length; x++) {
+            autobut[x].className = autobut[x].className.replace(" move", "");
+          }
+          if (auto > autobut.length) {auto = 1} 
+
+          autoState[auto-1].style.display = "block";  
+          autobut[auto-1].className += " move";
+          auto++;
+          setTimeout(autoSlide, 3000); // Change image every 2 seconds
+        }       
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="Card_Payment.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="picture/homepage/icon2.png">
+    <title>JOM Travel | Credit/Debit Card Payment</title>
+</head>
+
+<body>
+    <header>
+      <img src="image/logo.png" alt="Jom Travel" id="logo" />
+      <img src="image/Visa.png" alt="visa" id="visa" />
+      <img src="image/Master_Card.png" alt="master" id="master" />
+      <img src="image/American_Express.png" alt="american" id="american" />
+    </header>
+    <hr/>
+    <section>
+        <form>
+            <div>
+                <label for="cardNo"><span style="font-weight: bold; font-size: 20px; color: rgb(18, 2, 68);">Card Number</span></label>
+                <br/><br/>Enter the 16-digit card number on the card<br/><br/>
+                <input type="text" name="cardNo" id="cardNo" placeholder="3124 - 1542 - 7594 - 8862" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" size="60" required="required">
+            </div>
+            <div>
+                <br/><label for="cvvNo"><span style="font-weight: bold; font-size: 20px; color: rgb(15, 4, 51);">CVV Number</span></label>
+                <br/>Enter the 4 digit number on the card
+                <input type="text" name="cvvNo" id="cvvNo" maxlength="5" placeholder="4327" pattern="[0-9]{4}" required="required">          
+            </div>
+            <div>
+                <br/><label for="expire"><span style="font-weight: bold; font-size: 20px; color: rgb(15, 4, 51);">Expiry Date</span></label>
+                <br/>Enter the expiration date of the card
+                <input type="date" name="expire" id="expire" required="required">
+            </div>
+            <div>
+                <br/><label for="password"><span style="font-weight: bold; font-size: 20px; color: rgb(15, 4, 51);">Password</span></label>
+                <br/>Enter your Dynamic password
+                <input type="password" name="password" id="password" placeholder="password" size="20" required="required">
+            </div>
+            <br/>
+            <div>            
+                <input id="payNow" type="button" value="Pay Now" onclick="Paynow()">
+            </div>
+        </form>
+    </section>
+
+    <fieldset> 
+        <aside>
+            <br/><br/>
+            <p id="company">Company<span id="JT"><b>Jom Travel</b></span></p><br/><br/><br/>
+            <p id="order">Order Number<span id="ON"><b>1648953</b></span></p><br/><br/><br/>
+            <p id="pay">You have to Pay<p><br/>
+            <span id="MYR"><b>MYR 499</b></span>
+            <span id="sen">99</span>             
+         </aside>
+    </fieldset>
+
+    <script>
+      function Paynow() {
+        var cardNo = document.getElementById("cardNo").value;
+        var cvvNo = document.getElementById("cvvNo").value;
+        var expire = document.getElementById("expire").value;
+        var password = document.getElementById("password").value;
+        if (cardNo == ""|| cvvNo == ""|| expire == ""|| password == "") {
+          alert("Missing data! Please fill up!");
+        }
+        else {
+          alert("Payment successful!");
+          window.location.href="../Homepage.html";
+        }
+      }
+    </script>
+</body>
+</html>

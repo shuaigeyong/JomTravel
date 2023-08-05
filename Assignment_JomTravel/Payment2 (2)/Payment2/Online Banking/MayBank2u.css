@@ -1,0 +1,164 @@
+html {
+    background-color: rgb(5, 5, 40);
+}
+
+body {
+    width: 90%;
+    height: 100vh;
+    background: linear-gradient(
+        to right,
+        rgb(238, 215, 138) 0%,
+        rgb(238, 215, 138) 30%,
+        rgb(255, 255, 255) 30%,
+        rgb(255, 255, 255) 100%
+    );
+    margin: auto;   
+    overflow: hidden; 
+}
+
+
+/* Aside */
+
+aside {   
+    width: 30%;
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        rgb(247, 228, 25) 0%,
+        rgb(247, 228, 25) 8%,
+        rgb(238, 215, 138) 8%,
+        rgb(238, 215, 138) 25.5%,
+        antiquewhite 25.5%,
+        antiquewhite 87%,
+        rgb(238, 215, 138) 87%,
+        rgb(238, 215, 138) 100%
+    );
+    position: relative;
+    top: -620px;
+}
+
+aside h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(0, 0, 0);
+    position: relative;
+    left: 39%;
+    top: -65px;
+}
+
+aside nav ul li {
+    list-style-type: none;
+    padding: 16px 8px;
+    transform: scale(1,1) translateY(0px);
+    transition: all 0.2s linear;
+}
+
+li:hover {
+    background-color: bisque;
+    transform: scale(1.2,1.2) translateY(-10px);
+}
+
+aside nav ul li a {
+    text-decoration: none;
+    color: black;
+    transform: scale(1,1) translateY(0px);
+    transition: all 0.2s linear;
+}
+
+a:hover {
+    color: rgb(52, 36, 192);
+    transform: scale(1.2,1.2) translateY(-10px);
+}
+
+li:nth-of-type(1) {
+    font-size: 25px; 
+    min-width: 106.3%;  
+    position: relative;
+    left: -40px;
+    color: rgb(96, 85, 48);
+    background-color: rgb(250, 221, 91); 
+    transition: none;
+    transform: none;
+}
+
+/* Form */
+
+form#Maybank {
+    width: 100%;
+    position: relative;
+    left: 45%;
+    top: 50px;
+    padding-right: 15%;
+}
+
+input:focus {
+    background-color: rgb(221, 221, 217);
+}
+
+#date {background-color: rgb(221, 221, 217);}
+
+#amount, #acc, #party, #name, #email, #date, #description, #TAC {
+    position: absolute;
+    left: 20%;
+    width: 15%;
+    height: 35px;
+    border-radius: 3%;
+    border: 2px solid rgba(0, 0, 0, 0.453);
+}
+
+#amount {top: -10px;}
+#acc {top: 62px;}
+#party {top: 135px;}
+#name {top: 210px;}
+#email {top: 285px;}
+#date {top: 360px;}
+#description {top: 430px;}
+#TAC {top: 505px;}
+
+#tac {
+    position: relative;
+    top: -17px;
+}
+
+#req {
+    position: relative;
+    top: -27px;
+    left: -0.3%;
+    border: none;
+    color: rgb(10, 10, 148);
+    background-color: white;
+}
+
+#req:hover {
+    color: rgb(31, 31, 238);
+    cursor: pointer;
+}
+
+#req:active {
+    color: rgba(192, 23, 14, 0.875);
+}
+
+h2 {
+    font-size: 13px;
+    color: blue;
+    position: relative;
+    left: 11%;
+    top: -100px;
+    display: none;
+}
+
+#payNow {
+    width: 41%;
+    height: 45px;
+    position: relative;
+    top: 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(18, 18, 158);
+    transition-duration: 0.3s;
+}
+
+#payNow:hover {
+    background-color: rgb(11, 11, 73);
+}
+

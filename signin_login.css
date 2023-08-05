@@ -1,0 +1,348 @@
+@charset "utf-8";
+
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, nav a, ol, p, section, span, ul,
+table, tr, td, th, col, colgroup {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(signin_img1.jpg);
+    background-repeat: no-repeat;
+    background-size: 1540px 720px;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.form1 {
+    width: 400px;
+    max-width: 400px;
+    margin-right: 570px;
+}
+
+#text {
+    position: relative;
+    top: 120px;
+}
+
+#login {
+    position: relative;
+    bottom: 285px;
+    left: 600px;
+}
+
+div {
+    margin: 5px;
+    width: 100%;
+    color: white;
+}
+
+div > h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 5px;
+    margin-right: 30px;
+    margin-top: 90px;
+}
+
+#text p {
+    width: 455px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    line-height: 150%;
+    letter-spacing: 2px;
+}
+
+#text p b {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+    
+input#logUN {
+    width: 350px; 
+    height: 25px; 
+    border: 1px solid white;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+input#logPW {
+    width: 350px; 
+    height: 25px;
+    border: 1px solid white;  
+    outline: none;
+}
+
+input#logUN:focus, input#logPW:focus {
+    border-color: #009579;
+}
+
+.first {
+    background-color: rgb(255, 102, 0); 
+    color: white;
+    font-size: 18px; 
+    font-weight: 800;
+    width: 100px; 
+    padding: 5px 10px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.first:hover, .first:active {
+    background-color: rgb(230, 46, 0);   
+}
+
+span.second {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(0, 102, 102);
+    color: white;
+    padding: 8px 15px;
+    font-size: 21px; 
+    border-radius: 15px;
+    border: none;
+    position: relative;
+    top: 7px;
+    cursor: pointer;
+}
+
+span.second:hover, span.second:active {
+    background-color: #1c4850;  
+}
+
+button.first:active, span.second:active {
+    transform: scale(0.97);
+}
+
+/* Sign up form */
+
+.form2 {
+    font-size: 30px;
+    width: 30%;
+    min-width: 400px;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 32px;
+    margin: 16px;
+    border-radius: 5px;
+    margin-top: 105px;
+}
+
+.title {
+    font-family: 'Century Gothic';
+    word-spacing: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.Info_Box {
+    margin-bottom: 16px;
+}
+
+#email, #phone, #password1, #password2 {
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    background-color: #eeeeee;
+}
+
+#email:focus, #phone:focus, #password1:focus, #password2:focus {
+    border-color: #009579;
+    background-color: white;
+    box-shadow: 0px 3px 3px #11E5EF;
+}
+
+#message {
+    position: relative;
+}
+
+#message h3 {
+    font-size: 17px;
+    color: #000;
+}
+
+#message p {
+    position: relative;
+    top: 5px;
+    left: 35px;
+}
+
+.button {
+    position: relative;
+    left: 5.5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #009579;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #007f67;
+}
+
+.button:active {
+    transform: scale(0.97);
+}
+
+.text {
+    text-align: center;
+}
+
+.text:active {
+    transform: scale(0.97);
+}
+
+.link {
+    font-size: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link:link, .link:visited {
+    color: white;
+}
+
+p a.link:hover {
+    text-decoration: underline;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+    font-size: 17px;
+}
+  
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "\2714";
+}
+  
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+    font-size: 17px;
+}
+  
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "\2716";
+}
+
+/* Find Account */
+#findAcc {
+    max-width: 50%;
+    position: absolute;
+    top: 220px;
+    left: 400px;
+}
+
+#findAcc h2 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Century Gothic';
+    word-spacing: 5px;
+}
+
+.findAccount {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.findAccount input {
+    margin-top: 10px;
+    background-color: #eeeeee;
+    border: 1px solid lightgray;
+    outline: none;
+    width: 55%;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.findAccount input:focus {
+    background-color: #fff;
+}
+
+.btn {
+    padding: 10px 25px;
+    position: relative;
+    left: 500px;
+}
+
+#search-btn {
+    margin-left: 30px;
+    padding: 8px 18px;
+    border-radius: 15px;
+    color: white;
+    background-color: #009579;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#search-btn:hover {
+    background-color: #007f67;
+}
+
+#search-btn:active {
+    transform: scale(0.97);
+}
+
+#cancel {
+    font-size: 18px;
+    cursor: pointer;
+    color: #000;
+}
+
+/* Eye styles */
+#eyeball {
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 51.5%;
+    right: 45px;
+    border: none;
+    background-color: transparent;
+}
+
+#eyeball:active {
+    transform: translateY(1px);
+}
+
+

@@ -1,0 +1,171 @@
+.headimg{
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 340px;
+}
+html{
+   background-color: rgb(0,102,80);
+}
+body{
+    background-color:white;
+    max-width: 90%;
+    margin: auto;
+    /* background-color: rgba(175,217,211, 0.5);  */
+    /* background-color: #3e94ec; */
+    background-color: rgb(16, 73, 83);
+    
+}
+.buttonclass{
+    width: 100%;
+ 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(16, 73, 83);
+}
+button{
+   font-weight: 400;
+    background-color: #3fcf92;
+    color: white;
+    border: none;
+    margin-top: 1px;
+    margin-bottom: 30px;
+    padding: 12px 40px ;
+    font-size: 10px;
+    border-radius: 25px;
+}
+button a{
+    color: white;
+}
+button a:hover{
+    color: white;
+}
+.book{
+  margin-left: 77%;
+ 
+}
+.prvpage{
+  margin-left: 77%;
+}
+button:hover{
+    background-color: rgb(101, 164, 235);
+    color: white;
+    font-size: 17px;
+}
+
+
+h1{
+    color: white;
+}
+/* table */
+.tbl-header table{
+    
+    color:#D5DDE5;
+    background:#1b1e24;
+}
+th {
+    color: #D5DDE5;
+}
+.headcol1{
+    width: 10%;
+}
+.headcol2{
+width: 20%;
+}
+.bodycol1{
+    background-color: #4E5066;
+    width: 10%;
+}
+.bodycol2{
+width: 20%;
+}
+td{
+    padding-left: 15px;
+}
+
+.tbl-content th{
+    border-bottom: 1px solid rgb(13, 13, 55);
+}
+table{
+    width:80%;
+    table-layout: fixed;  margin: auto;
+    background-color: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+  }
+.tbl-content{
+    margin: auto;
+    width: 80%;
+    height: 500px;overflow: auto;
+
+	border-collapse: collapse;
+    margin-bottom: 20px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.tbl-content table{
+    width: 100%;
+}
+tr:nth-child(odd) td {
+    background:#EBEBEB;
+  }
+
+tr>td:hover{
+    /* background:#4E5066; */
+    /* color:#FFFFFF; */
+    /* border-top: 1px solid #22262e; */
+    border-bottom: 2px solid rgb(13, 13, 55);
+  }
+/* image */
+.imgbox{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.imgbox1{
+    margin: 0;
+    padding: 0;
+}
+.imgbox2{
+    margin: 0;
+    padding: 0;
+}
+.imgbox3{
+    margin: 0;
+    
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(0,0,0,0.5);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  
+  }
+  .imgbox1:hover{
+    transform:scale(1.1); 
+  }
+.imgbox1:hover .overlay {
+    width: 361px;
+    
+  }  
+  .text {
+   
+    margin: auto;
+    color: white;
+    font-size: 2px;
+   width: 300px;
+   height: 100px;
+ margin-top: 25px;
+    opacity: 0;
+transition: 1s;
+    
+  }
+  .text:hover{
+    opacity: 1;
+   
+  }

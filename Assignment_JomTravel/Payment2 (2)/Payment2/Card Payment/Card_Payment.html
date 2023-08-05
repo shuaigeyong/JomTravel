@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="Card_Payment.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+      <img src="image/logo.png" alt="Jom Travel" id="logo" />
+      <img src="image/Visa.png" alt="visa" id="visa" />
+      <img src="image/Master_Card.png" alt="master" id="master" />
+      <img src="image/American_Express.png" alt="american" id="american" />
+    </header>
+    <hr/>
+    <section>
+        <form>
+            <div>
+                <label for="cardNo"><span style="font-weight: bold; font-size: 20px; color: rgb(18, 2, 68);">Card Number</span></label>
+                <br/><br/>Enter the 16-digit card number on the card<br/><br/>
+                <input type="text" name="cardNo" id="cardNo" placeholder="3124 - 1542 - 7594 - 8862" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" size="60" required="required">
+            </div>
+            <div>
+                <br/><label for="cvvNo"><span style="font-weight: bold; font-size: 20px; color: rgb(15, 4, 51);">CVV Number</span></label>
+                <br/>Enter the 4 digit number on the card
+                <input type="text" name="cvvNo" id="cvvNo" maxlength="5" placeholder="4327" pattern="[0-9]{4}" required="required">          
+            </div>
+            <div>
+                <br/><label for="expire"><span style="font-weight: bold; font-size: 20px; color: rgb(15, 4, 51);">Expiry Date</span></label>
+                <br/>Enter the expiration date of the card
+                <input type="date" name="expire" id="expire" required="required">
+            </div>
+            <div>
+                <br/><label for="password"><span style="font-weight: bold; font-size: 20px; color: rgb(15, 4, 51);">Password</span></label>
+                <br/>Enter your Dynamic password
+                <input type="password" name="password" id="password" placeholder="password" size="20" required="required">
+            </div>
+            <br/>
+            <div>            
+                <input id="payNow" type="submit" value="Pay Now">
+            </div>
+        </form>
+    </section>
+
+    <fieldset> 
+        <aside>
+            <br/><br/>
+            <p id="company">Company<span id="JT"><b>Jom Travel</b></span></p><br/><br/><br/>
+            <p id="order">Order Number<span id="ON"><b>1648953</b></span></p><br/><br/><br/>
+            <p id="quantity">Quantity<span id="Q"><b>2</b></span></p><br/><br/><br/>
+            <p id="pay">You have to Pay<p><br/>
+            <span id="MYR"><b>MYR 499</b></span>
+            <span id="sen">99</span>             
+         </aside>
+    </fieldset>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h4>COMPANY</h4>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">TERM</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>QUICKLINKS</h4>
+              <ul>
+                <li><a href="/Homepage.html">Home</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">Frequently Ask Question</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>GET HELP</h4>
+              <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Feedback</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>FOLLOW US</h4>
+              <div class="social_link">
+                <ul>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </ul>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

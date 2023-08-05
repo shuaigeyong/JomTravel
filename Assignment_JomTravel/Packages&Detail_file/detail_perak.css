@@ -1,0 +1,150 @@
+.headimg{
+   position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 340px;
+    top: 70px;
+}
+html{
+   background-color: rgb(0,102,80);
+}
+body{
+    background-color:white;
+    max-width: 90%;
+    margin: auto;
+    /* background-color: rgba(175,217,211, 0.5);  */
+    background: linear-gradient(to right, #25c481, #25b7c4);
+}
+.buttonclass{
+    width: 100%;
+ 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(16, 73, 83);
+}
+button{
+   font-weight: 400;
+    background-color: #3fcf92;
+    color: white;
+    border: none;
+    margin-top: 1px;
+    margin-bottom: 30px;
+    padding: 12px 40px ;
+    font-size: 10px;
+    border-radius: 25px;
+}
+button a{
+    color: white;
+}
+button a:hover{
+    color: white;
+}
+.book{
+  margin-left: 77%;
+  position: relative;
+  top: 70px;
+}
+.prvpage{
+  margin-left: 75%;
+  /* position: absolute;
+    top: 2230px; */
+
+}
+button:hover{
+    background-color: rgb(101, 164, 235);
+    color: white;
+    font-size: 17px;
+}
+
+table{
+    margin: auto;
+    position: relative;
+    top: 70px;
+    width: 90%;
+    
+   margin-bottom: 20px;
+   border-collapse: collapse;
+   border: 2px solid rgba(255,255,255,0.3);
+
+}
+caption{
+    font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0px;
+}
+thead{
+    background-color: rgba(255,255,255,0.3);
+}
+tbody tr:nth-child(4){
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+th{
+    padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+th,td{
+    
+    padding: 10px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    border: solid 1px rgba(255,255,255,0.1);
+    margin-top: 0;
+  }  
+
+ td{
+ text-indent: 15px;
+}
+tbody{
+    
+}
+
+th:hover,td:hover{
+background-color: cadetblue;
+color: aliceblue;
+transform: scaley(1.1);
+
+}
+.imgbox{
+padding-top: 2%;
+padding-bottom: 10px;
+ margin: auto;
+background-color: rgb(16, 73, 83);
+position: relative;
+    top: 70px;
+width: 100%;
+border-radius: 10px 10px 0px 0px;
+}
+.imgbox img{
+
+margin: 2.5%;
+border-radius: 10px;
+
+}
+.cointainer{
+
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+
+.imgbox h1{
+color: whitesmoke;
+text-align: center;
+}
+footer{
+    position: relative;
+    top: 70px;
+}

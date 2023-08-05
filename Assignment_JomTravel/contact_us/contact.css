@@ -1,0 +1,249 @@
+html{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* color: white; */
+    background-color: #999999;
+    
+}
+
+#contactform{
+   position: relative;
+   margin-left: 550px;
+  
+}
+#contactform>input{
+    margin-bottom: 5px;
+
+    text-indent: 5px;
+    border-radius: 3px;
+    
+    font-size: 15px;
+    transition: 0.25s;
+}
+
+footer{
+    
+    margin-top: 50px;
+}
+legend::first-letter{
+    font-size: 40px
+}
+header{
+    margin-bottom: 70px;
+}
+.infocontact{
+    float: left;
+    position: relative;
+    margin-left: 100px;
+    z-index: 1;
+}
+.contactbox{
+    position: relative;
+    /* top: 30px;
+   left: 160px; */
+   margin: auto;
+   background-image: url();
+   background-color: 	rgb(112,128,144);
+   background-position: center;
+   background-size: cover;
+   padding: 80px;
+    border: 1px solid black;
+    width: 1000px;
+    height: 600px;
+    
+    box-shadow: 
+    0.5em 0.5em 0 0 #2f2f2f,
+    inset 0.3em 0.3em 0 0 #2f2f2f;
+   
+
+    overflow: hidden;
+}
+textarea{
+    text-indent: 5px;
+}
+.triangle_right{
+ 
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    top: 369px;
+    right: -80px;
+    border-right: 200px solid #2f2f2f;
+    border-bottom: 75px solid black;
+    border-left: 200px solid transparent;
+    border-top: 75px solid transparent;
+    z-index: 0;
+}
+#labelcaptcha{
+    position: absolute;
+    z-index: 1;
+}
+#captcha{
+    position:relative;
+    z-index:1;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#capnum{
+    position: relative;
+    background-color: white;
+    padding-left: 3px;
+    padding-right: 3px;
+    z-index: 1;
+   padding-top: 1px;
+   padding-bottom:1px ;
+   
+   border: 1px solid #2f2f2f;
+}
+#renew{
+    position: absolute;
+    z-index: 1;
+    margin-left: 1px;
+    cursor: pointer;
+    
+}
+.triangle_right input{
+    background-color: transparent;
+    color: white;
+    border: none;
+    position: relative;
+    left: 60px;
+      
+}
+
+.triangle_right input:hover{
+    
+    cursor: pointer;
+    transform: scale(1.1);
+    text-shadow: 0 0 8px white, 0 0 10px black;
+}
+
+.triangle_left{
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    border-left: 200px solid #2f2f2f;
+    border-top: 75px solid black;
+    border-right: 200px solid transparent;
+    border-bottom: 75px solid transparent;
+}
+
+#title h1:nth-child(1){
+    height:100px ;
+   background-image: url(img/backgroundcontact.jpg);
+   text-align: center;
+   padding-top: 20px;
+   font-style: italic;
+   color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 40px;
+}
+#title h1:nth-child(2),#title p{
+    text-align: center;
+    color:wheat;
+    
+}
+#title h1:nth-child(2){
+    margin: auto;
+    width: 500px;
+    font-size: 70px;
+   height: 90px;
+    border-bottom:2px solid #2f2f2f;
+    text-shadow: 2px 2px 5px red;
+}
+#googlemap{
+    width: 350px;
+}
+
+
+
+
+
+
+
+.bubble{
+    list-style: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    
+}
+.bubble li{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.15);
+    position: absolute;
+    bottom: -160px;
+    animation: bubbles 20s linear infinite;
+    border-radius: 100px;
+}
+.bubble li:nth-child(1){
+    left: 5%;
+}
+.bubble li:nth-child(2){
+    left: 10%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 2s;
+    animation-duration: 17s;
+}
+.bubble li:nth-child(3){
+    left: 25%;
+    animation-delay: 4s;
+}
+.bubble li:nth-child(4){
+    left: 30%;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255,255,255,0.25);
+    animation-duration: 22s;
+}
+.bubble li:nth-child(5){
+    left: 50%;
+}
+.bubble li:nth-child(6){
+    left: 70%;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(255,255,255,0.2);
+    animation-delay: 3s;
+}
+.bubble li:nth-child(7){
+    left: 32%;
+    width: 160px;
+    height: 160px;
+    animation-delay: 7s;
+}
+.bubble li:nth-child(8){
+    left: 55%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 15s;
+    animation-duration: 40s;
+}
+.bubble li:nth-child(9){
+    left: 25%;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,0.3);
+    animation-delay: 2s;
+    animation-duration: 40s;
+}
+.bubble li:nth-child(10){
+    left: 90%;
+    width: 160px;
+    height: 160px;
+    animation-delay: 11s;
+   
+}
+@keyframes bubbles{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-750px)}
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+  }
+  
+  body {
+     margin: 0;
+  } 
+  div#slider {
+     overflow: hidden;
+  }
+
+  div#slider figure img {
+     width: 20%; float: left; 
+  }
+
+  figure img{
+    max-height: 750px;
+    margin-bottom: 80px;
+  }
+
+  div#slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    animation: 30s slidy infinite; 
+  }
+
+  div.slider_title{
+   position: absolute;
+   margin-top: -550px;
+  }
+  div.slider_title h1{
+      text-align: center;
+      font-family: 'Adamina', sans-serif;
+      letter-spacing: 2px;
+      font-size: 50px;
+      color: rgba(205, 181, 44,0.95);
+  }
+
+  div.slider_title blockquote{
+   margin:0 400px ;
+   text-align: center;
+   color: rgba(211, 221, 229, 0.9);
+  }

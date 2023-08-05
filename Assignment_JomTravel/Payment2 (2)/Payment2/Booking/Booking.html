@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link href="Booking.css" rel="stylesheet" />
+    <script src="Booking.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="image/traveler.png" alt="TRAVELER" id="traveler" />      
+        <img src="image/plane.png" alt="Plane" id="plane" /> 
+        <img src="image/migratoryBird.png" alt="migratory birds" id="bird" />   
+        <nav>
+            <label class="logo"><img src="logo-removebg-preview.png"></label>
+            <ul class="nav_link">
+              <li><a href="/Homepage.html">HOME</a></li>
+              <li><a href="#">MAP</a></li>
+              <li><a href="#">CONTACT US</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">LOGIN</a> </li>
+            </ul>
+          </nav>
+    </header>
+    <blockquote>
+        Bon Voyage, See You Later, or whichever way you say Goodbye, send your safe journey wishes in one of our personalised cards and let them know you're thinking about them (or you're just jealous that they're on holiday). Whatever your reasons for wishing them well,, stick them in a personalised card, a little pre holiday treat just for them.
+    </blockquote>
+    <h1>BOOK & TRAVEL</h1>
+    <p>Wherever you go, make yourself at home</p>
+    <form id="book" name="book">
+        <fieldset>
+            <div>
+                <br/>
+                <label for="destination">DESTINATION</label><br/><br/>
+                <select id="destination" name="destination" onchange="checkDestination(this, 1)">
+                    <option value="0">Select the destination</option>
+                    <option value="1">Perlis</option>
+                    <option value="2">Penang</option>
+                    <option value="3">Perak</option>
+                    <option value="4">Kedah</option>
+                    <option value="5">Kelantan</option>
+                    <option value="6">Pahang</option>
+                    <option value="7">Terengganu</option>
+                    <option value="8">Malacca</option>
+                    <option value="9">Negeri Sembilan</option>
+                    <option value="10">Selangor</option>
+                    <option value="11">Johor</option>
+                    <option value="12">Sabah</option>
+                    <option value="13">Sarawak</option>
+                </select>
+            </div>
+            <br/>
+            <div class="first">
+                <label for="package">PACKAGE</label><br/><br/>
+                <label id="fees">FEE</label>
+            </div>
+            <div class="second">
+                <select id="package" name="package" onchange="checkPackage(this, 1)" disabled>
+                    <option>Select the package</option>
+                    <option value="850.00">Package 1</option>
+                    <option value="900.00">Package 2</option>
+                    <option value="750.00">Package 3</option>
+                    <option value="600.00" id="pac1" style="display: none">Package</option>                 
+                </select>
+                <input type="text" name="fee" id="fee" disabled />
+            </div>
+            <br/>
+            <div class="third">
+                <label for="adult">ADULT</label>
+                <label for="children" id="children">CHILD</label><br/><br/>
+            </div>
+            <div class="amount">
+                <input type="text" name="aduPrice" id="amount1" onchange="sum()" disabled />   
+                <input type="text" name="aduPrice" id="amount2" onchange="sum()" disabled />   
+            </div>
+            <br/>
+            <div class="fourth">
+                <input type="number" id="qty1" name="adult" min="0" max="10" value="0" step="1" onclick="pack(this, 1)" disabled />
+                <input type="text" name="price1" id="price1" readonly />
+                <input type="number" id="qty2" name="child" min="0" max="10" value="0" step="1"  onclick="packing(this, 2)" disabled />
+                <input type="text" name="price2" id="price2" readonly />
+            </div>
+            <br/>
+            <label>SEASON</label><br/><br/>
+            <div>
+                <input type="radio" name="season" id="season1" class="fifth" checked required />
+                <label for="season1" class="fifth">January - March</label> 
+                <input type="radio" name="season" id="season2" class="sixth" required />
+                <label for="season2" class="sixth">April - June</label> 
+            </div>
+            <br/>
+            <div>
+                <input type="radio" name="season" id="season3" class="fifth" required />
+                <label for="season3" class="fifth">July - September</label> 
+                <input type="radio" name="season" id="season4" class="sixth" required />
+                <label for="season4" id="oct" class="sixth">October - December</label>
+            </div>
+            <div>
+                <br/><br/>
+                <input type="submit" value="BOOKING NOW" id="booking" name="booking" onclick="payment()" />
+            </div>
+        </fieldset>
+    </form>
+
+   
+</body>
+</html>

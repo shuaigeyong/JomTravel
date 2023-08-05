@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<style>
+
+html{
+    scroll-behavior: smooth;
+  }
+#uptop{
+  font-size: 50px;
+  
+  position: fixed;
+  opacity: 0;
+  top: 80%;
+  left: 90%;
+  
+  animation-name: ;
+animation-duration: 1s;
+}
+
+/* #uptop::after{
+  content: "\e195";
+  transform: rotateY(100deg);
+} */
+#uptop1:hover #uptop2:hover{
+  
+transform: rotateY(360deg);
+top: 0px;
+}
+body{
+  height: 1000px;
+}
+@keyframes up{
+  from{
+    top:80%;
+  }
+  to{
+    top: 0%;
+  }
+}
+</style>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+</head>
+
+
+
+
+<body>
+  <a href="javascript:" id="top"><i class="icon-chevron-up"></i></a>
+  <h3>Scroll down</h3>
+  <h3><i class="icon-arrow-down"></i>
+ <a href="#top" target="_self"><i id="uptop" class="material-icons">&#xe195;</i></a> 
+   <script>
+  //   window.onload=function(){
+    
+  
+      window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      if (document.documentElement.scrollTop > 100) {
+        document.getElementById("uptop").style.opacity="1";
+        
+      } else {
+        document.getElementById("uptop").style.opacity="0";
+      }
+    }
+    var uptop=document.getElementById("uptop");
+    uptop.addEventListener("click",function(){
+      uptop.style.animationName="up";
+      document.getElementById("uptop").style.opacity="1";
+     
+       if(uptop.scrollTop==0){
+        uptop.style.animationName=""; uptop.style.transition="3s";
+        document.getElementById("uptop").style.opacity="0";
+       }
+    })</script>
+</body>
+</html>

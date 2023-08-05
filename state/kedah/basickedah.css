@@ -1,0 +1,226 @@
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, nav a, ol, p, section, span, ul,
+table, tr, td, th, col, colgroup {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+html {
+    background-color: #364f6b;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(
+        to bottom,
+        #e4fffe 0%,
+        #e4fffe 41.5%,
+        #5ac7c3 41.5%,
+        #5ac7c3 56.5%,
+        #e4fffe 56.5%,
+        #e4fffe 71%,
+        #5ac7c3 71%,
+        #e4fffe 90%
+    ); 
+    text-align: center;
+    margin: 0px auto;
+    min-width: 320px;
+    min-height: 100%;  
+    width: 90%;
+}
+
+.caption b {
+    margin: 10px auto 35px auto;
+    font-size: 80px;
+    font-family: 'Brush Script MT';
+    font-weight: bold;
+    font-variant: small-caps;
+    letter-spacing: 5px;
+    color: #f8ecfd;
+    text-shadow: 2px 3px 2px #00adb5;
+    position: relative;
+    top: -450px;
+    user-select: none;
+}
+
+/* Table */
+
+.day {
+    padding-left: 5%; 
+    font: bold italic 30px 'Segoe Print';
+    position: relative;
+    bottom: 90px;
+    text-align: left;
+    clear: both;
+}  
+
+table.schedule {
+    width: 50%;   
+    margin-top: -100px;
+    margin-left: 7%;  
+    margin-bottom: 150px;
+    border-collapse: collapse;
+    border: 0.5px solid white;
+    position: relative;
+    top: 20px;
+    float: left;
+}
+
+.schedule, th, .time1, .time2, .event1, .event2 {
+  border: 0.5px solid white;
+}
+
+td {       
+    font-size: 20px;    
+}
+
+.title {
+    font-size: 20px;
+    height: 30px;
+    color: white;
+    background-color: #1e4060;
+}
+
+.time1, .event1 {
+    height: 45px; 
+    text-align: center;
+    color: black;
+    background-color: white;
+    font-size: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.time2, .event2 {
+    height: 45px; 
+    text-align: center;
+    color: black;
+    background-color: #f3f3f3;
+    font-size: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.space1 {padding: 0 5px;}
+
+.space2 {padding: 0 15px;}
+
+/* Review */
+
+div#review {
+    width: 37%;
+    min-height: 600px;
+    text-align: justify;
+    position: relative;
+    top: -390px;
+    left: 45px;
+    z-index: 1;
+    float: left;
+}
+  
+div#review #list {
+    position: absolute;
+}
+  
+@keyframes review {
+    0%    {top: 600px;}
+    100%  {top: -1650px;}
+}
+  
+div#review #list { 
+    animation: review 20s linear infinite;
+}
+  
+div#review:hover #list {
+    animation-play-state: paused;
+}
+  
+div#review {
+    -webkit-flex: 1 1 320px;
+    flex: 2;
+    -webkit-align-self: center;
+    align-self: center;
+}
+  
+div#review {
+    background-color: rgba(144, 168, 156, 0.579);   
+    height: 300px;
+    overflow: hidden;
+    border: rgb(151, 151, 151) 10px inset;
+    margin: 0px 5px;
+}
+  
+#review #list caption {
+    font: bold small-caps 40px/0.6em 'MS Gothic';
+    color:rgba(0, 0, 0, 0.8);
+    padding-bottom: 20px;
+    border-bottom: 2px dotted rgba(0, 0, 0, 0.4);
+}
+  
+.name, .name2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 10px 0px 10px;
+    color:rgba(60, 70, 65, 0.579);
+}
+  
+.name2 {padding: 20px 10px 0px 10px;}
+  
+table#list {
+    color: rgb(231, 231, 231);
+    font-size: 0.7em; 
+    padding: 10px; 
+    height: 1200px;   
+    width: 100%;
+}
+
+table#list td.comment {
+    font-size: 15px;
+    padding: 3px 10px 10px 10px;
+    border-bottom: 1.5px dashed rgba(0, 0, 0, 0.4);   
+    margin: 0px;
+    color:rgba(0, 0, 0, 0.7);
+}
+
+/* Button */
+.buttonclass {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -100px;
+    left: 210px;
+}
+
+.previous, .book {
+    font-size: 16px;
+    padding: 8px 15px;
+    border: none;
+    background-color: #00adb5;
+    border-radius: 20px;
+}
+
+.previous:hover, .book:hover {
+    background-color: #2b8697;
+}
+
+.previous:active, .book:active {
+    transform: scale(0.98);
+}
+
+/* Footer */
+
+.footer {
+    clear: both;
+}

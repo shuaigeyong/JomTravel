@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/8d6dbf3dd8.js" crossorigin="anonymous"></script>
+    <title>Feedback</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+          <label class="logo"><a href="Homepage.html"><img src="picture/homepage/logo.png"></a></label>
+          <ul class="nav_link">
+            <li><a href="Homepage.html">HOME</a></li>
+            <li><a href="map.html">MAP</a></li>
+            <li><a href="contact us.html">CONTACT</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="Signin_login.html">LOGIN</a> </li>
+          </ul>
+        </nav>
+      </header>
+
+    <div class="container-1">
+        <div class="header">
+            <h1>Feedback</h1>
+            <hr />
+            <h6>Please write your feedback below :</h6>
+            <h3>How do you rate your overall experience?</h3>
+        </div>
+
+        <form action="" method="post">
+          <div class="radio-btn">
+              <input type="radio" id="bad" name="rating" value="bad" />
+              <label for="bad">Bad</label>
+              <input type="radio" id="average" name="rating" value="average" />
+              <label for="average">Average</label>
+              <input type="radio" id="good" name="rating" value="good" />
+              <label for="good">Good</label>
+          </div>
+          
+          <div class="row-1">
+              <div class="info">
+                  <input type="text" id="name" required />
+                  <label for="name"><i class="fa-solid fa-user"></i> Full Name</label>
+              </div>
+      
+              <div class="info">
+                  <input type="text" id="age" required />
+                  <label for="age"><i class="fa-sharp fa-solid fa-cake-candles"></i> Age</label>
+              </div>
+          </div>
+          
+          <div class="info">
+              <input type="text" id="email" required />
+              <label for="email"><i class="fa-regular fa-envelope"></i> Email</label>
+          </div>
+  
+          <div class="info">
+              <input type="text" id="phone" required />
+              <label for="phone"><i class="fa-solid fa-phone"></i> Phone number</label>
+          </div>
+  
+          <div class="info">
+              <textarea id="message" rows="8" required></textarea>
+              <label for="message"><i class="fa-solid fa-message"></i> Message</label><br />
+          </div>
+  
+          <button type="submit" class="submit-btn" id="submit" onclick="feedback()">SUBMIT <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+    </div>
+    
+    <script>
+      function feedback() {
+        var name = document.getElementById('name').value;
+        var age = document.getElementById('age').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone').value;
+        var message = document.getElementById('message').value;
+
+        if(name != "" && age != "" && email != "" && phone != "" && message!= "") {
+          alert('Thanks for your feedback, we have already received');
+        }
+      }
+    </script>
+</body>
+</html>

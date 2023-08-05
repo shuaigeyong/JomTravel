@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-1 {
+    position: relative;
+    top: -200px;
+    left: 40px;
+    width: 1200px;
+    display: flex;
+    padding: 30px;
+}
+
+.header {
+    position: relative;
+    top: -300px;
+    left: 0px;
+    font: bolder italic 40px 'Segoe Print';
+    color: #163048;
+}
+
+#card1 {
+    margin-left: 13px;
+}
+
+.container-1 .card {
+    position: relative;
+    left: 85px;
+    margin-left: 100px;
+    width: 280px;
+    height: 220px;
+    background: linear-gradient(
+        to bottom,
+        #c8f5fe 0%,
+        #daf9fe 50%,
+        #fff 100%
+    );
+    padding: 20px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.container-1 .card:hover {
+    height: 410px;
+}
+
+.container-1 .card .imgBox {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -80px;
+    left:-5px;
+}
+
+.container .card .imgBox img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container-1 .card .content {
+    position: relative;
+    top: -70px;
+    text-align: justify;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container-1 .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="signin_login.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="picture/homepage/icon2.png">
+    <script type="text/javascript" src="validate.js"></script>
+    <script src="https://kit.fontawesome.com/8d6dbf3dd8.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Login</title>
+    <style>
+        #formtwo {
+            display: none;
+        }
+        #findAcc {
+            display: none;
+        }
+        .eye1 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form1" id="formone">
+        <div id="text">
+            <h1>Welcome<br/>Back</h1>
+            <br/>
+            <p><b>Jom Travel</b> is an app developed by a group of students from TARUC. 
+            This app is contributes to the person who want to travel in Malaysia
+            but dont'n know the any tourist attraction.</p>
+        </div>
+
+        <div id="login">
+            <form name="login_form" action="" method="get"> 
+                <div>
+                    <h1 style="margin-left: 110px; margin-bottom: 35px; font-size: 45px;">Login</h1>
+                </div>
+                <div>
+                    <label for="logUN">Email Address / Phone Number</label>
+                    <br/>
+                    <input type="text" id="logUN" name="contactBox" required autofocus/>
+                    <div class="form_message-error"></div>
+                </div>
+                <div>
+                    <label for="logPW">Password</label>
+                    <br/>
+                    <input type="password" id="logPW" name="psdBox" class="secret" required autofocus/>
+                    <img src="eye_cansee.jpg" id="eyeball" width="23px" height="15px" />
+                </div>
+                <div>
+                    <button class="first" onclick="login()">Login</button>
+                    <p class="text" style="text-align: left;">
+                        <a class="link" id="findpsd">Forgot your password?</a>
+                    </p>
+                    <br/>
+                    <span class="second" id="signup">Create New Account</span>
+                </div>     
+            </form>
+        </div>
+    </div>
+
+    <div class="form2" id="formtwo">
+        <form class="signin_form" id="createAccount" action="" method="post">
+            <h1 class="title">Create Account</h1>
+            <div class="Info_Box">
+                <input type="email" id="email" name="contactBox" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Please follow the example given" placeholder="Email Address" required autofocus/>
+            </div>
+            <div class="Info_Box">
+                <input type="tel" id="phone" name="contactBox" pattern="^(([0-9]{3})[-]?)*[0-9]{6,7}$" placeholder="Phone number (012-3456789)" title="Please follow the example given" required autofocus/>
+            </div>
+            <div class="Info_Box">
+                <input type="password" id="password1" name="psdBox" onkeyup="display()" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required autofocus/>
+                <div id="message">
+                    <h3>Password must contain the following:</h3>
+                    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                    <p id="number" class="invalid">A <b>number</b></p>
+                    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                </div>
+            </div>
+            <div class="Info_Box">
+                <input type="password" id="password2" name="psdBox" placeholder="Confirm password" required autofocus/>
+            </div>
+            <button class="button" onclick="register()">Sign In</button>
+            <p class="text">
+                <a class="link" id="log">Already have an account? Log in</a>
+            </p>
+        </form>
+    </div>
+
+    <div id="findAcc">
+        <form class="findAccount">
+            <h2>Find Your Account</h2><hr/>
+            <p>Please enter your email address or phone number to search for your account.</p>
+            <input type="text" id="contact" placeholder="Email address or phone number" required />
+    
+            <br><br><hr/><br>
+
+            <div class="btn">
+                <span id="cancel"><b>Cancel</b></span>
+                <span id="search-btn" onclick="search()">Search</span> 
+            </div>
+        </form>
+    </div>
+
+    <script>
+    var signup = document.getElementById("signup");
+    var log = document.getElementById("log");
+    var formone = document.getElementById("formone");
+    var formtwo = document.getElementById("formtwo");
+    var findpsd = document.getElementById("findpsd");
+    var findAcc = document.getElementById("findAcc");
+    var cancel = document.getElementById("cancel");
+
+    signup.addEventListener("click", function() {
+        formtwo.style.display = "block";
+        formone.style.display = "none";
+        findAcc.style.display = "none";
+    });
+
+    log.addEventListener("click", function() {
+        formtwo.style.display = "none";
+        formone.style.display = "block";
+        findAcc.style.display = "none";
+    });
+
+    findpsd.addEventListener("click", function() {
+        formone.style.display = "none";
+        formtwo.style.display = "none";
+        findAcc.style.display = "block";
+    });
+
+    cancel.addEventListener("click", function() {
+        formtwo.style.display = "none";
+        formone.style.display = "block";
+        findAcc.style.display = "none";
+    });
+
+    var eye = document.getElementById('eyeball');
+    var passwordInput = document.getElementById('logPW');
+
+    eye.addEventListener('click', function(event) {
+            event.preventDefault();
+            passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+            passwordInput.focus();        
+    });
+    </script>
+</body>
+
+</html>

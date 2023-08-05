@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JomTraveL</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.ico"><!--website logo-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+   <link rel="stylesheet" href="footer.css">
+   <link rel="stylesheet" href="header1.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+          <label class="logo"><img src="img/logo.png"></label>
+          <ul class="nav_link">
+            <li><a href="/Homepage.html">HOME</a></li>
+            <li id="hmap"><a href="#">MAP</a></li>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">LOGIN</a> </li>
+          </ul>
+        </nav>
+    </header>
+     
+
+    <div id="title">   
+      <h1>Serve every customer with heart and soul</h1>
+      <h1>Contact Us</h1>
+      <p>We know you're prepared</p>
+      <p> just let us know what's lacking, and we'll do our best to accommodate you on the voyage.</p>
+    </div>
+
+    <div class="contactbox">
+        <div class="triangle_left"></div>
+        <div class="infocontact">
+          <h1><img src="img/icon2.png" alt="" width="50px" height="60px"><i>Jom Travel</i></h1>
+          <p><i class="material-icons">&#xe0b0;</i> +(04)473 6895</p>
+          <p><i class="material-icons">&#xe0be;</i> JomTraveL@gmail.com</p>
+          <p><i class="material-icons">&#xe55f;</i>Lintang Lembah Permai 2, Tanjung Tokong,<br>&nbsp;&nbsp;&nbsp;&nbsp; 11200 Tanjung Bungah, Pulau Pinang</p> 
+          <iframe id="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.7393546895605!2d100.28203080525603!3d5.456472725853859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac3c0c4a4a6bd%3A0x7bd2b00afd5e3ff!2sG%20Block!5e0!3m2!1szh-CN!2smy!4v1663775080307!5m2!1szh-CN!2smy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <ul class="bubble">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        </ul>
+
+
+
+
+
+     
+      <form action="mailto:JomTravel@gmail.com?subject=Question%20about%20JomTravel%20company"  id="contactform" method="post"  name="contactform">
+        <legend><i>Leave</i> us a message</legend>
+        <label for="username">Name</label><br>
+        <input type="text" name="username" id="username" required placeholder="John" size="26"  >
+        <br>
+        <label for="useremail">Email</label><br>
+        <input type="email" id="useremail" name="useremail" required size="26"  placeholder="john@gmail.com"><br>
+        <label for="userphone">Phone.No</label><br>
+        <input type="tel" id="userphone" name="userphone" required size="26"  pattern="[0-9]{3}-[0-9]{7}" placeholder="123-1234567"><br>
+        <label for="usermessage">Message</label><br>
+        <textarea name="usermessage" id="usermessage"  required cols="30" rows="5" placeholder="I love JomTravel !"></textarea><br>
+        <label for="captcha" id="labelcaptcha">Captcha</label><br>
+        <input id="captcha" type="text" size="2"  maxlength="4" name="captcha" required>
+        <span id="capnum"><i></i></span><span id="renew" class="material-icons">&#xe863;</span>
+        <div class="triangle_right">
+          <input id="send" type="submit" value="Send">
+        </div>
+      </form>
+    </div>
+      
+
+
+     <!-- <div id="successful"></div> -->
+<script src="contact.js"></script>
+
+ 
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h4>COMPANY</h4>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Term</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>QUICKLINKS</h4>
+              <ul>
+                <li><a href="/Homepage.html">Home</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">Frequently Ask Question</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>GET HELP</h4>
+              <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Feedback</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>FOLLOW US</h4>
+              <div class="social_link">
+                <ul>
+                  <a href="https://web.facebook.com/profile.php?id=100015456192440" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </ul>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

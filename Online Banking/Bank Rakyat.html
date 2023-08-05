@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Rakyat</title>
+    <link href="bank.css" rel="stylesheet" />
+    <script src="bank.js"></script>
+    
+</head>
+
+<body>
+    <form name="Maybank" id="Maybank">
+        <div>
+            <label for="amount" id="amt">Amount*:</label>
+            <input type="text" name="amount" id="amount" placeholder="MYR" required="required" />
+            
+        </div>
+        <div>
+            <br/><br/><br/>
+            <label for="acc">From Account*:</label>
+            <input type="text" name="acc" id="acc" pattern="[0-9]{12}" placeholder="WSA" required="required" /> 
+            
+        </div>
+        <div>
+            <br/><br/><br/>
+            <label for="party" id="num">To 3rd Party Account Number*:</label>
+            <input type="text" name="party" id="party" pattern="[0-9]{12}" placeholder="643122857938" required="required" />
+        </div>
+        <div>
+            <br/><br/><br/>
+            <label for="name" id="hold">Account Holder Name*:</label>
+            <input type="text" name="name" id="name" required="required" />
+        </div>
+        <div>
+            <br/><br/><br/>
+            <label for="email" id="recp">Recipient Email*:</label>
+            <input type="text" name="email" id="email" required="required" />
+        </div>
+        <div>
+            <br/><br/><br/>
+            <label for="date" id="effect">Effective Date*:</label>
+            <input type="text" name="date" id="date" disabled />
+        </div>
+        <div>
+            <br/><br/><br/>
+            <label for="description" id="des">Description of Transaction:</label>
+            <input type="text" name="description" id="description" />
+        </div>
+        <div>
+            <br/><br/><br/>
+            <label for="TAC" id="tac">TAC*:</label>
+            <input type="text" name="TAC" id="TAC" required="required" /><br/><br/>
+            <button id="req" onclick="request(); stop(); count()"> Request a TAC number</button>
+        </div>
+        <div>
+            <input type="button" name="payNow" id="payNow" value="Pay Now" onclick="check()" />
+        </div>
+        <h2>[0s]</h2>
+    </form>
+
+    <aside>
+        <img src="image/BankRakyat.png" alt="Bank Rakyat" width="200px" height="70px" />
+        <h1 style="top: -75px; left: 210px;">Bank Rakyat Pay</h1>
+        <nav>
+            <ul>
+                <li>FAQ</li>
+                <li><a href="https://m2upay.maybank2u.com.my/assets/faq/index.html#basics">About MayBank2u Pay</a></li>
+                <li><a href="https://m2upay.maybank2u.com.my/assets/faq/index.html#online">Online Banking Payment Gateway</a></li>
+                <li><a href="https://m2upay.maybank2u.com.my/assets/faq/index.html#cards">Cards Payment Gateway</a></li>
+                <li><a href="https://m2upay.maybank2u.com.my/assets/faq/index.html#pos">Point-of-Sales (POS) Terminal</a></li>
+                <li><a href="https://m2upay.maybank2u.com.my/assets/faq/index.html#mpos">Mobile Point-of-Sales (mPOS) Terminal</li>
+                <li><a href="https://m2upay.maybank2u.com.my/assets/faq/index.html#QRPayBiz">Maybank QRPayBiz</a></li>
+                <li><a href="https://m2upay.maybank2u.com.my/assets/faq/index.html#m2ubiller">Maybank2u Biller</li>
+                <li><a href="https://m2upay.maybank2u.com.my/assets/faq/index.html#jompay">JomPAY</a></li>
+            </ul>
+        </nav>
+    </aside>
+</body>
+</html>

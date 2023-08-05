@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cover img{
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.cover h1{
+  font-family: 'Adamina', sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  color: #fccc3a;
+  position: absolute;
+  top: 270px;
+  left: 200px;
+}
+
+div.content1{
+  background-color: #F2F2F2;
+  position: relative;
+  
+}
+.content1 h2{
+  font-family: 'Adamina', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 100px;
+  margin-bottom: 26px;
+  color: #dfa634;
+}
+
+.content1 blockquote{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 20%;
+    color: rgb(50, 49, 49);
+    padding-bottom: 100px;
+    font-size: 18px;
+
+}
+
+.content2{
+  background-color: #119b68;
+  position: relative;
+  width: 100%;
+}
+.content2 h2{
+  font-family: 'Adamina', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 100px;
+  margin-bottom: 26px;
+  color: #edb23c;
+}
+
+.content2 blockquote{
+  font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 20%;
+    color: #f2f2f2;
+    padding-bottom: 100px;
+    font-size: 18px;
+}
+
+.content3{
+  background-color: #78dcb0;
+  position: relative;
+  width: 100%;
+  
+}
+.content3 h2{
+  font-family: 'Adamina', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 100px;
+  margin-bottom: 26px;
+  color: #dc9f26;
+}
+
+.content3 blockquote{
+  font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 20%;
+    color: rgb(41, 37, 37);
+    padding-bottom: 100px;
+    font-size: 18px;
+
+}
